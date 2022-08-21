@@ -1,0 +1,49 @@
+<div class="wrapper__calc">
+  <div>
+    <label>
+      <input
+        class="calc__input"
+        type="number"
+        (input)="onChangeTo($event)"
+        [value]="chengValueTo"
+      />
+    </label>
+    <label>
+      <select
+        class="calc__select"
+        (input)="eventCurrencyTo($event)"
+        name="currency"
+        [value]="CurrencyTo"
+      >
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="UAH">UAH</option>
+      </select>
+    </label>
+  </div>
+
+  <div>
+    <label>
+      <input
+        class="calc__input"
+        type="number"
+        (input)="onChangeResult($event)"
+        [value]="chengValueResult"
+      />
+    </label>
+    <label>
+      <select
+        class="calc__select"
+        (input)="eventCurrencyResult($event)"
+        name="currency"
+        [value]="CurrencyResult"
+      >
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="UAH">UAH</option>
+      </select>
+    </label>
+  </div>
+
+  <p class="course-text">According to the course: {{ course }}</p>
+</div>

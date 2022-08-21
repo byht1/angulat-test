@@ -1,0 +1,13 @@
+<header class="header">
+  <div class="container">
+    <div class="header__box">
+      <h1 class="title">{{ title }}</h1>
+      <ul class="list">
+        <li *ngFor="let b of bank">
+          <h2 class="currency__text">{{ b.name }}</h2>
+          <p>{{ b.course }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
